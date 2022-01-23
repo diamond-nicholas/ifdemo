@@ -8,7 +8,7 @@
 
   .card {
     display: grid;
-    grid-gap: 1.2rem;
+    // grid-gap: 1.2rem;
     grid-template-columns: 1fr 1fr 1fr;
     // grid-template-rows: 150px 150px 100px;
     grid-template-areas:
@@ -16,6 +16,11 @@
       'sidebar1 sidebar1 sidebar2'
       'sidebar3 sidebar4 sidebar5'
       'bottom bottom bottom';
+
+    .card-body {
+      margin: 20px;
+      background: white;
+    }
   }
 
   .top {
@@ -47,21 +52,147 @@
 
   .sidebar1 {
     grid-area: sidebar1;
+
+    .card-content {
+      padding: 3.5rem;
+
+      h3 {
+        font-size: 2.13333rem;
+        line-height: 2.93333rem;
+        padding: 0 0 6px;
+        color: #333;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      button {
+        padding: 1rem 3.5rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        background: #7a2d74;
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
   }
 
   .sidebar2 {
     grid-area: sidebar2;
+
+    .card-content {
+      padding: 3.5rem;
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 2.93333rem;
+        padding: 0 0 6px;
+        color: #333;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1rem;
+      }
+      button {
+        padding: 1rem 3.5rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        background: #7a2d74;
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
   }
   .sidebar3 {
     grid-area: sidebar3;
+    .card-content {
+      padding: 3.5rem;
+
+      h3 {
+        font-size: 1rem;
+        line-height: 2.93333rem;
+        padding: 0 0 6px;
+        color: #333;
+        font-family: Roboto, sans-serif;
+        font-weight: 600;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      button {
+        padding: 0.8rem 1.2rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        background: #7a2d74;
+        color: white;
+        font-size: 1rem;
+      }
+    }
   }
   .sidebar4 {
     grid-area: sidebar4;
+    .card-content {
+      padding: 3rem;
+
+      h3 {
+        font-size: 1rem;
+        line-height: 2rem;
+        padding: 0 0 6px;
+        color: #333;
+        font-family: Roboto, sans-serif;
+        font-weight: 600;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+      button {
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        background: #7a2d74;
+        color: white;
+        font-size: 1rem;
+      }
+    }
   }
   .sidebar5 {
     grid-area: sidebar5;
+    .card-content {
+      padding: 3.5rem;
+
+      h3 {
+        font-size: 1rem;
+        line-height: 2.93333rem;
+        padding: 0 0 6px;
+        color: #333;
+        font-family: Roboto, sans-serif;
+        font-weight: 600;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      button {
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        background: #7a2d74;
+        color: white;
+        font-size: 1rem;
+      }
+    }
   }
   .bottom {
     grid-area: bottom;
+
+    .card-content {
+      padding: 3.5rem;
+
+      p {
+        font-size: 1rem;
+      }
+    }
   }
 }

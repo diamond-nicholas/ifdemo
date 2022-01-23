@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@1,500&display=swap');
+
+.main {
+  max-width: 900px;
+  margin: auto;
+  background: #f5f7f7;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  .card {
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: 150px 150px 100px;
+    grid-template-areas:
+      'top top top'
+      'sidebar1 sidebar1 sidebar2'
+      'sidebar3 sidebar4 sidebar5'
+      'bottom bottom bottom';
+  }
+
+  .top {
+    grid-area: top;
+
+    .card-content {
+      padding: 3.5rem;
+      h3 {
+        font-size: 2.13333rem;
+        line-height: 2.93333rem;
+        padding: 0 0 6px;
+        color: #333;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      button {
+        padding: 1rem 3.5rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        background: #7a2d74;
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .sidebar1 {
+    grid-area: sidebar1;
+  }
+
+  .sidebar2 {
+    grid-area: sidebar2;
+  }
+  .sidebar3 {
+    grid-area: sidebar3;
+  }
+  .sidebar4 {
+    grid-area: sidebar4;
+  }
+  .sidebar5 {
+    grid-area: sidebar5;
+  }
+  .bottom {
+    grid-area: bottom;
+  }
+}
